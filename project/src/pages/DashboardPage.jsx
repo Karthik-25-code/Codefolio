@@ -28,10 +28,10 @@ const DashboardPage = () => {
     const fetchAllData = async () => {
       try {
         const [leetProfileRes, leetContestRes, chefProfileRes, chefContestRes] = await Promise.all([
-          axios.get(`https://codefolio-1-71p2.onrender.com/stats/leetcode/${leetcodeUsername}`),
-          axios.get(`https://codefolio-1-71p2.onrender.com/stats/leetcode/contest/${leetcodeUsername}`),
-          axios.get(`https://codefolio-1-71p2.onrender.com/stats/codechef/${codechefUsername}`),
-          axios.get(`https://codefolio-1-71p2.onrender.com/stats/codechef/contest/${codechefUsername}`)
+          axios.get(`https://codefolio-3-c0q7.onrender.com/stats/leetcode/${leetcodeUsername}`),
+          axios.get(`https://codefolio-3-c0q7.onrender.com/stats/leetcode/contest/${leetcodeUsername}`),
+          axios.get(`https://codefolio-3-c0q7.onrender.com/stats/codechef/${codechefUsername}`),
+          axios.get(`https://codefolio-3-c0q7.onrender.com/stats/codechef/contest/${codechefUsername}`)
         ]);
 
         setLeetcodeData({
